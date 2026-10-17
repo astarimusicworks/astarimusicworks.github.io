@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astari — Music Producer & Composer</title>
+    <meta name="description" content="Astari — J-Pop & J-Rock Music Producer, Composer, Multi-Instrumentalist. Open for commissions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<!-- ======================================================
+     NAVIGATION
+     ====================================================== -->
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Astari">
+        <span class="nav-logo-text">ASTARI</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ======================================================
+     HERO
+     ====================================================== -->
+<main class="hero">
+    <div class="hero-logo">
+        <img src="images/logo.png" alt="Astari">
+    </div>
+    <p class="hero-eyebrow">Music Producer &amp; Composer</p>
+    <h1 class="hero-title">ASTARI</h1>
+    <p class="hero-subtitle">
+        J-Pop <span>·</span> J-Rock <span>·</span> Original Composition
+    </p>
+    <div class="hero-buttons">
+        <a href="commission.html" class="btn btn-primary">✦ Open Commission</a>
+        <a href="portfolio.html" class="btn btn-outline">Listen to My Work</a>
+    </div>
+    <div class="commission-status">
+        <span class="status-dot"></span>
+        Commission is currently&nbsp;<strong style="color: var(--green);">Open</strong>
+    </div>
+</main>
+
+<!-- ======================================================
+     SERVICES PREVIEW
+     ====================================================== -->
+<section>
+    <p class="section-label">What I Offer</p>
+    <h2 class="section-title">Services</h2>
+    <div class="divider"></div>
+    <div class="services-mini-grid">
+        <div class="service-mini-card">🎵&nbsp; MIDI Transcription</div>
+        <div class="service-mini-card">🎤&nbsp; Synthesizer V Vocal Cover</div>
+        <div class="service-mini-card">🎼&nbsp; Original Composition</div>
+        <div class="service-mini-card">🎸&nbsp; Arrangement &amp; Backing Track</div>
+        <div class="service-mini-card">🥁&nbsp; Session Musician (Remote)</div>
+        <div class="service-mini-card">🎚️&nbsp; Mixing</div>
+        <div class="service-mini-card">🎮&nbsp; Sound Design</div>
+    </div>
+    <div class="text-center mt-2">
+        <a href="services.html" class="btn btn-outline">View All Services →</a>
+    </div>
+</section>
+
+<!-- ======================================================
+     FEATURED WORKS
+     ====================================================== -->
+<div style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <section>
+        <p class="section-label">Latest Releases</p>
+        <h2 class="section-title">Featured Works</h2>
+        <div class="divider"></div>
+        <div class="portfolio-grid">
+
+            <!-- Single 1 -->
+            <div class="portfolio-card">
+                <div class="portfolio-artwork">
+                    <!-- REPLACE with: <img src="images/senjata-terkuat.jpg" alt="Senjata Terkuat"> -->
+                    ♪
+                </div>
+                <div class="portfolio-info">
+                    <h3>Senjata Terkuat</h3>
+                    <p class="meta">Original Single &nbsp;·&nbsp; J-Pop</p>
+                </div>
+                <div class="portfolio-embed">
+                    <!-- PASTE your Spotify / SoundCloud embed code here -->
+                    <div class="embed-placeholder">[ Streaming embed ]</div>
+                </div>
+            </div>
+
+            <!-- Single 2 -->
+            <div class="portfolio-card">
+                <div class="portfolio-artwork">
+                    <!-- REPLACE with: <img src="images/narasi-harapan.jpg" alt="Narasi Harapan"> -->
+                    ♪
+                </div>
+                <div class="portfolio-info">
+                    <h3>Narasi Harapan</h3>
+                    <p class="meta">Original Single &nbsp;·&nbsp; J-Pop</p>
+                </div>
+                <div class="portfolio-embed">
+                    <!-- PASTE your Spotify / SoundCloud embed code here -->
+                    <div class="embed-placeholder">[ Streaming embed ]</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="text-center mt-3">
+            <a href="portfolio.html" class="btn btn-outline">View Full Portfolio →</a>
+        </div>
+    </section>
+</div>
+
+<!-- ======================================================
+     FOOTER
+     ====================================================== -->
+<footer>
+    <p>© 2025 Astari. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://fiverr.com/[YOUR_FIVERR_USERNAME]" target="_blank" rel="noopener">Fiverr</a>
+        <a href="https://www.upwork.com/freelancers/[YOUR_UPWORK_ID]" target="_blank" rel="noopener">Upwork</a>
+        <a href="https://instagram.com/[YOUR_IG_USERNAME]" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@[YOUR_TIKTOK_USERNAME]" target="_blank" rel="noopener">TikTok</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Astari</title>
+    <meta name="description" content="About Astari — J-Pop & J-Rock music producer, composer, and multi-instrumentalist with a background in Acoustical Physics.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Astari">
+        <span class="nav-logo-text">ASTARI</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="page-hero">
+    <p class="section-label">The Artist</p>
+    <h1 class="section-title">About Astari</h1>
+    <div class="divider"></div>
+</div>
+
+<section>
+    <div class="about-grid">
+
+        <!-- LEFT: Logo + Skills -->
+        <div class="about-logo-area">
+            <img src="images/logo.png" alt="Astari">
+
+            <p class="about-section-label">Instruments</p>
+            <div class="skills-list" style="justify-content: center;">
+                <span class="skill-tag">Drum</span>
+                <span class="skill-tag">Guitar</span>
+                <span class="skill-tag">Bass</span>
+                <span class="skill-tag">Piano</span>
+                <span class="skill-tag">Violin</span>
+            </div>
+
+            <p class="about-section-label">Software</p>
+            <div class="skills-list" style="justify-content: center;">
+                <span class="skill-tag">Cubase</span>
+                <span class="skill-tag">FL Studio</span>
+                <span class="skill-tag">Adobe Audition</span>
+                <span class="skill-tag">Synthesizer V</span>
+            </div>
+
+            <p class="about-section-label">Focus Genre</p>
+            <div class="skills-list" style="justify-content: center;">
+                <span class="skill-tag">J-Pop</span>
+                <span class="skill-tag">J-Rock</span>
+                <span class="skill-tag">Acoustic</span>
+                <span class="skill-tag">Cinematic</span>
+            </div>
+        </div>
+
+        <!-- RIGHT: Bio -->
+        <div class="about-content">
+            <h2>Hello, I'm Astari.</h2>
+
+            <p>
+                I'm a <strong>music producer and composer</strong> specializing in J-Pop and J-Rock.
+                My musical journey is rooted in a background in <strong>Acoustical Physics</strong> —
+                a field that taught me to hear music not just as art, but as science.
+                Understanding how sound behaves in space has made me a more intentional and precise producer.
+            </p>
+
+            <p>
+                I'm a multi-instrumentalist — I play <strong>drums, guitar, bass, piano, and violin</strong>.
+                This hands-on relationship with multiple instruments shapes everything I produce.
+                I write parts that feel natural and human, even when they're built inside a DAW.
+            </p>
+
+            <p>
+                My released singles — <strong>Senjata Terkuat</strong> and <strong>Narasi Harapan</strong> —
+                are available on major streaming platforms.
+                They reflect my love for melodic storytelling and the emotional depth found in Japanese music.
+            </p>
+
+            <p>
+                I work under the name <em>Astari</em> — a space where sound meets intention,
+                and every note serves a purpose.
+                Whether you need a transcription, a full original composition, or something in between,
+                I'm here to bring your musical vision to life.
+            </p>
+
+            <!-- Stats -->
+            <div class="about-stats">
+                <div class="stat">
+                    <span class="stat-number">2</span>
+                    <span class="stat-label">Released Singles</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Instruments</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">DAWs &amp; Tools</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Astari. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://fiverr.com/[YOUR_FIVERR_USERNAME]" target="_blank" rel="noopener">Fiverr</a>
+        <a href="https://www.upwork.com/freelancers/[YOUR_UPWORK_ID]" target="_blank" rel="noopener">Upwork</a>
+        <a href="https://instagram.com/[YOUR_IG_USERNAME]" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@[YOUR_TIKTOK_USERNAME]" target="_blank" rel="noopener">TikTok</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+</script>
+
+</body>
+</html>

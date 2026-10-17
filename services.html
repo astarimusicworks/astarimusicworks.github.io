@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Astari</title>
+    <meta name="description" content="Music production services by Astari — MIDI transcription, Synthesizer V vocal cover, original composition, mixing, and more.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Astari">
+        <span class="nav-logo-text">ASTARI</span>
+    </a>
+    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="commission.html">Commission</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Page Hero -->
+<div class="page-hero">
+    <p class="section-label">What I Offer</p>
+    <h1 class="section-title">Services</h1>
+    <div class="divider"></div>
+    <p style="color: var(--muted); font-size: 0.925rem; max-width: 560px; margin: 0 auto; line-height: 1.8;">
+        Affordable music services tailored to your vision — from a single track to a full production.<br>
+        <em style="font-size: 0.85rem;">Layanan musik dengan harga terjangkau, bisa dipesan dari mana saja.</em>
+    </p>
+</div>
+
+<!-- Services Grid -->
+<section>
+    <div class="services-grid">
+
+        <!-- 1. MIDI Transcription -->
+        <div class="service-card">
+            <div class="service-icon">🎵</div>
+            <h3>MIDI Transcription</h3>
+            <span class="service-badge">Fiverr</span>
+            <span class="service-badge">Upwork</span>
+            <p>
+                Accurate transcription of any song into MIDI, sheet music (notation), and guitar/bass tab.
+                Perfect for practice, study, cover projects, or re-arrangement.<br><br>
+                <em>Transkripsi lagu ke MIDI, partitur, dan tab gitar/bass secara akurat.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="https://fiverr.com/[YOUR_FIVERR_USERNAME]/[YOUR_GIG_SLUG]"
+                   target="_blank" rel="noopener" class="btn btn-fiverr" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Order on Fiverr
+                </a>
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 2. Synthesizer V Vocal Cover -->
+        <div class="service-card">
+            <div class="service-icon">🎤</div>
+            <h3>Synthesizer V Vocal Cover</h3>
+            <span class="service-badge">Fiverr</span>
+            <p>
+                High-quality AI vocal covers using Synthesizer V.
+                Available in Japanese, English, and Indonesian with expressive, natural-sounding delivery.<br><br>
+                <em>Vocal cover menggunakan Synthesizer V. Tersedia dalam bahasa Jepang, Inggris, dan Indonesia.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="https://fiverr.com/[YOUR_FIVERR_USERNAME]/[YOUR_GIG_SLUG_2]"
+                   target="_blank" rel="noopener" class="btn btn-fiverr" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Order on Fiverr
+                </a>
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 3. Original Composition -->
+        <div class="service-card">
+            <div class="service-icon">🎼</div>
+            <h3>Original Composition</h3>
+            <p>
+                Custom original music built around your vision — J-Pop, J-Rock, acoustic, cinematic, and more.
+                From initial concept all the way to the final mix.<br><br>
+                <em>Komposisi lagu orisinal sesuai konsep kamu — J-Pop, J-Rock, akustik, sinematik, dan lainnya.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 4. Arrangement & Backing Track -->
+        <div class="service-card">
+            <div class="service-icon">🎸</div>
+            <h3>Arrangement &amp; Backing Track</h3>
+            <p>
+                Full arrangement of your existing melody or chord progression.
+                Backing tracks for live performance, karaoke versions, or studio recording sessions.<br><br>
+                <em>Arransemen musik lengkap dan backing track untuk perform, karaoke, atau rekaman.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 5. Session Musician -->
+        <div class="service-card">
+            <div class="service-icon">🥁</div>
+            <h3>Session Musician (Remote)</h3>
+            <p>
+                Remote session recording on drums, guitar, bass, piano, or violin.
+                Adding a real, human touch to your track — no programmed stiffness.<br><br>
+                <em>Rekaman session remote: drum, gitar, bass, piano, atau biola untuk track kamu.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 6. Mixing -->
+        <div class="service-card">
+            <div class="service-icon">🎚️</div>
+            <h3>Mixing</h3>
+            <p>
+                Professional mixing to make your track sound polished, balanced, and release-ready.
+                Clear stereo field, controlled dynamics, and a cohesive sound.<br><br>
+                <em>Mixing profesional supaya track kamu terdengar rapi, seimbang, dan siap rilis.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+        <!-- 7. Sound Design -->
+        <div class="service-card">
+            <div class="service-icon">🎮</div>
+            <h3>Sound Design</h3>
+            <p>
+                Custom sound effects and audio design for games, animations, and multimedia projects.
+                Immersive, unique, and 100% original.<br><br>
+                <em>Sound effect dan audio design untuk game, animasi, dan multimedia — orisinal dan imersif.</em>
+            </p>
+            <div class="service-buttons">
+                <a href="contact.html" class="btn btn-outline" style="font-size:0.82rem; padding:0.6rem 1.1rem;">
+                   Contact Me
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Info Note -->
+    <div class="info-box mt-4">
+        💡 All prices are affordable and flexible. Detailed pricing is available on each platform.<br>
+        <em>Semua harga terjangkau dan fleksibel. Detail harga tersedia di masing-masing platform.</em>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-3">
+        <a href="commission.html" class="btn btn-primary">✦ See How to Commission</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Astari. All rights reserved.</p>
+    <div class="footer-links">
+        <a href="https://fiverr.com/[YOUR_FIVERR_USERNAME]" target="_blank" rel="noopener">Fiverr</a>
+        <a href="https://www.upwork.com/freelancers/[YOUR_UPWORK_ID]" target="_blank" rel="noopener">Upwork</a>
+        <a href="https://instagram.com/[YOUR_IG_USERNAME]" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://tiktok.com/@[YOUR_TIKTOK_USERNAME]" target="_blank" rel="noopener">TikTok</a>
+    </div>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById('navLinks').classList.toggle('open');
+    }
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            document.getElementById('navLinks').classList.remove('open');
+        });
+    });
+</script>
+
+</body>
+</html>
