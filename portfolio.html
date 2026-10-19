@@ -36,8 +36,8 @@
 
 <div class="page-hero">
     <p class="section-label">
-        <span class="lang-en">My Work</span>
-        <span class="lang-id">Karya Saya</span>
+        <span class="lang-en">Discography &amp; Releases</span>
+        <span class="lang-id">Diskografi &amp; Rilisan Musik</span>
     </p>
     <h1 class="section-title">
         <span class="lang-en">Portfolio</span>
@@ -45,8 +45,8 @@
     </h1>
     <div class="divider"></div>
     <p style="color: var(--muted); font-size: 0.925rem; max-width: 540px; margin: 0 auto; line-height: 1.8;">
-        <span class="lang-en">Stream original releases on Spotify, preview tracks, and explore J-Pop / J-Rock productions.</span>
-        <span class="lang-id">Dengarkan rilis orisinal di Spotify, preview audio, dan jelajahi produksi musik J-Pop / J-Rock.</span>
+        <span class="lang-en">Stream original releases directly on Spotify and explore music projects on BandLab.</span>
+        <span class="lang-id">Dengarkan seluruh rilis orisinal langsung di Spotify dan ikuti karya musik di BandLab.</span>
     </p>
 </div>
 
@@ -59,8 +59,8 @@
         <span class="lang-id">Spotify Resmi</span>
     </p>
     <h2 class="section-title" style="font-size: 1.8rem;">
-        <span class="lang-en">Stream on Spotify</span>
-        <span class="lang-id">Putar Lagu di Spotify</span>
+        <span class="lang-en">Listen to Releases</span>
+        <span class="lang-id">Daftar Rilisan Musik</span>
     </h2>
     <div class="divider"></div>
 
@@ -73,92 +73,57 @@
         </iframe>
     </div>
 
-    <div class="text-center mt-2">
+    <div class="text-center mt-3" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
         <a href="https://open.spotify.com/artist/5y5qtcshlITnyTsQuU0jKW" target="_blank" rel="noopener" class="btn btn-primary" style="font-size: 0.85rem;">
-            <span class="lang-en">Open Artist on Spotify ↗</span>
-            <span class="lang-id">Buka Profil di Spotify ↗</span>
+            🎧 <span class="lang-en">Open Spotify Profile</span><span class="lang-id">Buka Profil Spotify</span>
         </a>
-        <a href="https://www.bandlab.com/astarimusicworks" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem; margin-left: 0.5rem;">
-            <span class="lang-en">Visit BandLab Profile ↗</span>
-            <span class="lang-id">Kunjungi Profil BandLab ↗</span>
+        <a href="https://www.bandlab.com/astarimusicworks" target="_blank" rel="noopener" class="btn btn-outline" style="font-size: 0.85rem;">
+            🎛️ <span class="lang-en">Explore BandLab Works</span><span class="lang-id">Jelajahi Karya BandLab</span>
         </a>
     </div>
 </section>
 
 <!-- ======================================================
-     AUDIO TRACKS & LOCAL PLAYER
+     BANDLAB & PLATFORMS SHOWCASE
      ====================================================== -->
 <div style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <section>
         <p class="section-label">
-            <span class="lang-en">Direct Audio Showcase</span>
-            <span class="lang-id">Koleksi Audio Player</span>
+            <span class="lang-en">Platforms</span>
+            <span class="lang-id">Platform Musik</span>
         </p>
         <h2 class="section-title" style="font-size: 1.8rem;">
-            <span class="lang-en">Original Tracks &amp; Demos</span>
-            <span class="lang-id">Track Orisinal &amp; Demo</span>
+            <span class="lang-en">Where to Find My Music</span>
+            <span class="lang-id">Temukan Karya Saya</span>
         </h2>
         <div class="divider"></div>
 
-        <div style="max-width: 760px; margin: 0 auto;">
-
-            <!-- Track 1: Senjata Terkuat -->
-            <div class="audio-track-card">
-                <div class="audio-track-info">
-                    <div>
-                        <div class="audio-track-title">Senjata Terkuat</div>
-                        <p style="color: var(--muted); font-size: 0.82rem; margin: 0.2rem 0 0;">Astari &nbsp;·&nbsp; J-Pop / Original Single</p>
-                    </div>
-                    <span class="audio-track-tag">J-Pop</span>
-                </div>
-                <!-- Native Audio Player (reads from audio/ folder if uploaded) -->
-                <audio controls class="custom-audio-player" preload="none">
-                    <source src="audio/senjata-terkuat.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <!-- Track 2: Narasi Harapan -->
-            <div class="audio-track-card">
-                <div class="audio-track-info">
-                    <div>
-                        <div class="audio-track-title">Narasi Harapan</div>
-                        <p style="color: var(--muted); font-size: 0.82rem; margin: 0.2rem 0 0;">Astari &nbsp;·&nbsp; J-Pop / Original Single</p>
-                    </div>
-                    <span class="audio-track-tag">J-Pop</span>
-                </div>
-                <audio controls class="custom-audio-player" preload="none">
-                    <source src="audio/narasi-harapan.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <!-- Drag & Drop Audio Live Player (Local Instant Preview) -->
-            <div class="dropzone-box" id="audioDropzone" onclick="document.getElementById('audioFileInput').click()">
-                <div class="dropzone-icon">📁 ➔ 🎵</div>
-                <h4 style="margin-bottom: 0.35rem; color: var(--light);">
-                    <span class="lang-en">Drag &amp; Drop Audio File Here to Preview</span>
-                    <span class="lang-id">Tarik &amp; Lepas File Audio ke Sini untuk Preview</span>
-                </h4>
-                <p style="color: var(--muted); font-size: 0.82rem; margin: 0;">
-                    <span class="lang-en">Or click to select an MP3/WAV file from your device</span>
-                    <span class="lang-id">Atau klik untuk memilih file MP3/WAV dari perangkat Anda</span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+            
+            <!-- Spotify Card -->
+            <div class="service-card" style="text-align: center;">
+                <div class="service-icon">🎧</div>
+                <h3>Spotify</h3>
+                <p>
+                    <span class="lang-en">Stream all official singles and discography on Spotify. Available globally.</span>
+                    <span class="lang-id">Dengarkan seluruh single orisinal dan diskografi resmi di Spotify secara global.</span>
                 </p>
-                <input type="file" id="audioFileInput" accept="audio/*" style="display: none;" onchange="handleFileSelect(event)">
-                
-                <div id="previewPlayerArea" style="display: none; margin-top: 1.25rem;">
-                    <p id="previewTrackName" style="color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 0.5rem;"></p>
-                    <audio id="previewAudioElement" controls class="custom-audio-player"></audio>
-                </div>
+                <a href="https://open.spotify.com/artist/5y5qtcshlITnyTsQuU0jKW" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.82rem; margin-top: 0.5rem;">
+                    Listen on Spotify
+                </a>
             </div>
 
-            <div class="info-box mt-3" style="text-align: left;">
-                <span class="lang-en">
-                    💡 <strong>How to add new songs permanently:</strong> Simply upload your MP3 files into the <code>audio/</code> folder in GitHub (via Drag &amp; Drop), and they will be playable right here!
-                </span>
-                <span class="lang-id">
-                    💡 <strong>Cara menambah lagu baru secara permanen:</strong> Cukup upload file MP3 Anda ke dalam folder <code>audio/</code> di GitHub (bisa via Drag &amp; Drop langsung di browser), dan lagu Anda langsung bisa diputar di sini!
-                </span>
+            <!-- BandLab Card -->
+            <div class="service-card" style="text-align: center;">
+                <div class="service-icon">🎛️</div>
+                <h3>BandLab</h3>
+                <p>
+                    <span class="lang-en">Follow for original arrangements, creative drafts, collaborations, and community beats.</span>
+                    <span class="lang-id">Ikuti untuk aransemen orisinal, draf kreatif, kolaborasi, dan karya musik di BandLab.</span>
+                </p>
+                <a href="https://www.bandlab.com/astarimusicworks" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.82rem; margin-top: 0.5rem;">
+                    Visit BandLab Profile
+                </a>
             </div>
 
         </div>
@@ -186,54 +151,6 @@
             document.getElementById('navLinks').classList.remove('open');
         });
     });
-
-    // Drag and Drop Audio Handler
-    const dropzone = document.getElementById('audioDropzone');
-    
-    ['dragenter', 'dragover'].forEach(name => {
-        dropzone.addEventListener(name, (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            dropzone.classList.add('dragover');
-        });
-    });
-
-    ['dragleave', 'drop'].forEach(name => {
-        dropzone.addEventListener(name, (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            dropzone.classList.remove('dragover');
-        });
-    });
-
-    dropzone.addEventListener('drop', (e) => {
-        const files = e.dataTransfer.files;
-        if (files && files.length > 0) {
-            playLocalFile(files[0]);
-        }
-    });
-
-    function handleFileSelect(e) {
-        const file = e.target.files[0];
-        if (file) {
-            playLocalFile(file);
-        }
-    }
-
-    function playLocalFile(file) {
-        if (!file.type.startsWith('audio/')) {
-            alert('Silakan pilih file audio (MP3, WAV, dll)');
-            return;
-        }
-        const previewArea = document.getElementById('previewPlayerArea');
-        const trackName = document.getElementById('previewTrackName');
-        const audioElement = document.getElementById('previewAudioElement');
-        
-        trackName.textContent = '▶ Now Playing: ' + file.name;
-        audioElement.src = URL.createObjectURL(file);
-        previewArea.style.display = 'block';
-        audioElement.play();
-    }
 </script>
 
 </body>
