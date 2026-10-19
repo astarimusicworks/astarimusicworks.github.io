@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
     <script src="lang.js"></script>
+    <script src="tracks.js"></script>
 </head>
 <body>
 
@@ -45,8 +46,8 @@
     </h1>
     <div class="divider"></div>
     <p style="color: var(--muted); font-size: 0.925rem; max-width: 540px; margin: 0 auto; line-height: 1.8;">
-        <span class="lang-en">Stream original releases directly on Spotify and explore music projects on BandLab.</span>
-        <span class="lang-id">Dengarkan seluruh rilis orisinal langsung di Spotify dan ikuti karya musik di BandLab.</span>
+        <span class="lang-en">Stream official releases on Spotify and explore music projects on BandLab.</span>
+        <span class="lang-id">Dengarkan rilis resmi di Spotify dan ikuti karya musik di BandLab.</span>
     </p>
 </div>
 
@@ -59,8 +60,8 @@
         <span class="lang-id">Spotify Resmi</span>
     </p>
     <h2 class="section-title" style="font-size: 1.8rem;">
-        <span class="lang-en">Listen to Releases</span>
-        <span class="lang-id">Daftar Rilisan Musik</span>
+        <span class="lang-en">Official Releases</span>
+        <span class="lang-id">Rilisan Musik Resmi</span>
     </h2>
     <div class="divider"></div>
 
@@ -84,51 +85,70 @@
 </section>
 
 <!-- ======================================================
-     BANDLAB & PLATFORMS SHOWCASE
+     AUDIO & DEMOS (TRACKS UPLOADED TO AUDIO/)
      ====================================================== -->
 <div style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <section>
         <p class="section-label">
-            <span class="lang-en">Platforms</span>
-            <span class="lang-id">Platform Musik</span>
+            <span class="lang-en">Audio &amp; Demos</span>
+            <span class="lang-id">Audio &amp; Demo</span>
         </p>
         <h2 class="section-title" style="font-size: 1.8rem;">
-            <span class="lang-en">Where to Find My Music</span>
-            <span class="lang-id">Temukan Karya Saya</span>
+            <span class="lang-en">Uploaded Audio Tracks</span>
+            <span class="lang-id">Koleksi Track Audio</span>
         </h2>
         <div class="divider"></div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
-            
-            <!-- Spotify Card -->
-            <div class="service-card" style="text-align: center;">
-                <div class="service-icon">🎧</div>
-                <h3>Spotify</h3>
-                <p>
-                    <span class="lang-en">Stream all official singles and discography on Spotify. Available globally.</span>
-                    <span class="lang-id">Dengarkan seluruh single orisinal dan diskografi resmi di Spotify secara global.</span>
-                </p>
-                <a href="https://open.spotify.com/artist/5y5qtcshlITnyTsQuU0jKW" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.82rem; margin-top: 0.5rem;">
-                    Listen on Spotify
-                </a>
-            </div>
-
-            <!-- BandLab Card -->
-            <div class="service-card" style="text-align: center;">
-                <div class="service-icon">🎛️</div>
-                <h3>BandLab</h3>
-                <p>
-                    <span class="lang-en">Follow for original arrangements, creative drafts, collaborations, and community beats.</span>
-                    <span class="lang-id">Ikuti untuk aransemen orisinal, draf kreatif, kolaborasi, dan karya musik di BandLab.</span>
-                </p>
-                <a href="https://www.bandlab.com/astarimusicworks" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.82rem; margin-top: 0.5rem;">
-                    Visit BandLab Profile
-                </a>
-            </div>
-
+        <div id="audioTrackList" style="max-width: 760px; margin: 0 auto;">
+            <!-- Populated automatically from tracks.js -->
         </div>
     </section>
 </div>
+
+<!-- ======================================================
+     PLATFORMS
+     ====================================================== -->
+<section>
+    <p class="section-label">
+        <span class="lang-en">Platforms</span>
+        <span class="lang-id">Platform Musik</span>
+    </p>
+    <h2 class="section-title" style="font-size: 1.8rem;">
+        <span class="lang-en">Where to Find My Music</span>
+        <span class="lang-id">Temukan Karya Saya</span>
+    </h2>
+    <div class="divider"></div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; max-width: 800px; margin: 0 auto;">
+        
+        <!-- Spotify Card -->
+        <div class="service-card" style="text-align: center;">
+            <div class="service-icon">🎧</div>
+            <h3>Spotify</h3>
+            <p>
+                <span class="lang-en">Stream all official singles and discography on Spotify. Available globally.</span>
+                <span class="lang-id">Dengarkan seluruh single orisinal dan diskografi resmi di Spotify secara global.</span>
+            </p>
+            <a href="https://open.spotify.com/artist/5y5qtcshlITnyTsQuU0jKW" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.82rem; margin-top: 0.5rem;">
+                Listen on Spotify
+            </a>
+        </div>
+
+        <!-- BandLab Card -->
+        <div class="service-card" style="text-align: center;">
+            <div class="service-icon">🎛️</div>
+            <h3>BandLab</h3>
+            <p>
+                <span class="lang-en">Follow for original arrangements, creative drafts, collaborations, and community tracks.</span>
+                <span class="lang-id">Ikuti untuk aransemen orisinal, draf kreatif, kolaborasi, dan trek musik di BandLab.</span>
+            </p>
+            <a href="https://www.bandlab.com/astarimusicworks" target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.82rem; margin-top: 0.5rem;">
+                Visit BandLab Profile
+            </a>
+        </div>
+
+    </div>
+</section>
 
 <footer>
     <p>© 2025 Astari. All rights reserved.</p>
