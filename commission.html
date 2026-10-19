@@ -7,6 +7,7 @@
     <meta name="description" content="Commission Astari for custom music production, MIDI transcription, vocal covers, and more.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
+    <script src="lang.js"></script>
 </head>
 <body>
 
@@ -15,65 +16,77 @@
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
         <span class="nav-logo-text">ASTARI</span>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-        <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="commission.html" class="active">Commission</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-id">Beranda</span></a></li>
+        <li><a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+        <li><a href="portfolio.html"><span class="lang-en">Portfolio</span><span class="lang-id">Portofolio</span></a></li>
+        <li><a href="commission.html" class="active"><span class="lang-en">Commission</span><span class="lang-id">Komisi</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-id">Tentang</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
     </ul>
+    <div class="nav-actions">
+        <div class="lang-switch" title="Switch Language / Ganti Bahasa">
+            <button class="lang-btn btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn btn-id" onclick="setLanguage('id')">ID</button>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <div class="page-hero">
-    <p class="section-label">Let's Work Together</p>
-    <h1 class="section-title">Commission</h1>
+    <p class="section-label">
+        <span class="lang-en">Let's Work Together</span>
+        <span class="lang-id">Mari Berkolaborasi</span>
+    </p>
+    <h1 class="section-title">
+        <span class="lang-en">Commission</span>
+        <span class="lang-id">Informasi Komisi</span>
+    </h1>
     <div class="divider"></div>
 </div>
 
 <section>
 
-    <!-- ======================================================
-         STATUS BANNER
-         ====================================================== -->
+    <!-- STATUS BANNER -->
     <div class="commission-status-banner">
         <div class="commission-open-label">
             <span class="status-dot"></span>
-            Commission: Open
+            <span class="lang-en">Commission: Open</span>
+            <span class="lang-id">Status Komisi: Buka</span>
         </div>
         <p style="color: var(--muted); font-size: 0.875rem;">
-            Currently accepting new orders. &nbsp;·&nbsp;
-            <em>Saat ini sedang menerima pesanan baru.</em>
+            <span class="lang-en">Currently accepting new projects and orders.</span>
+            <span class="lang-id">Saat ini sedang menerima pesanan dan proyek baru.</span>
         </p>
     </div>
-    <!--
-        === TO CLOSE COMMISSION ===
-        Replace "Open" with "Closed" and change status-dot color:
-        .status-dot { background: #f87171; box-shadow: 0 0 8px #f87171; }
-        Or simply edit the text above to say "Commission: Closed"
-    -->
 
-    <!-- ======================================================
-         HOW TO ORDER
-         ====================================================== -->
-    <p class="section-label">How to Order</p>
-    <h2 class="section-title" style="font-size: 1.8rem;">Cara Memesan</h2>
+    <!-- HOW TO ORDER -->
+    <p class="section-label">
+        <span class="lang-en">Workflow</span>
+        <span class="lang-id">Alur Pemesanan</span>
+    </p>
+    <h2 class="section-title" style="font-size: 1.8rem;">
+        <span class="lang-en">How to Order</span>
+        <span class="lang-id">Cara Memesan</span>
+    </h2>
     <div class="divider"></div>
 
     <div class="how-order-grid">
 
         <!-- International -->
         <div class="order-card">
-            <h3>🌐 International Clients</h3>
-            <p>Payment in USD via Fiverr or Upwork. Safe, structured, and milestone-based.</p>
+            <h3>🌐 <span class="lang-en">International Clients</span><span class="lang-id">Klien Internasional</span></h3>
+            <p>
+                <span class="lang-en">Payment in USD via Fiverr. Safe, structured, and milestone-based.</span>
+                <span class="lang-id">Pembayaran dalam USD melalui Fiverr. Aman, terstruktur, dengan proteksi escrow.</span>
+            </p>
             <ul class="order-steps">
-                <li>🟢 Visit my Fiverr or Upwork profile</li>
-                <li>🟢 Choose a service and place your order</li>
-                <li>🟢 Describe your brief in the order chat</li>
-                <li>🟢 Receive your files upon completion</li>
+                <li>🟢 <span class="lang-en">Visit my Fiverr gig or profile</span><span class="lang-id">Kunjungi gig atau profil Fiverr saya</span></li>
+                <li>🟢 <span class="lang-en">Choose a service package or request a custom offer</span><span class="lang-id">Pilih paket layanan atau ajukan custom offer</span></li>
+                <li>🟢 <span class="lang-en">Describe your brief &amp; requirements in order chat</span><span class="lang-id">Sampaikan brief dan referensi di kolom chat order</span></li>
+                <li>🟢 <span class="lang-en">Receive your completed files with revisions</span><span class="lang-id">Terima file hasil akhir beserta jatah revisi</span></li>
             </ul>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                 <a href="https://www.fiverr.com/s/P44VlWw"
@@ -85,13 +98,16 @@
 
         <!-- Local / Indonesia -->
         <div class="order-card">
-            <h3>🇮🇩 Klien Indonesia</h3>
-            <p>Harga dalam Rupiah. Bayar via transfer bank. Pesan lewat WhatsApp, Instagram, atau TikTok.</p>
+            <h3>🇮🇩 <span class="lang-en">Indonesia Clients</span><span class="lang-id">Klien Indonesia</span></h3>
+            <p>
+                <span class="lang-en">Payment in IDR via Bank Transfer. Order directly via WhatsApp, Instagram, or TikTok.</span>
+                <span class="lang-id">Harga dalam Rupiah. Bayar via transfer bank. Pesan langsung lewat WhatsApp, Instagram, atau TikTok.</span>
+            </p>
             <ul class="order-steps">
-                <li>🟢 Hubungi saya via WA, IG, atau TikTok</li>
-                <li>🟢 Ceritakan kebutuhan kamu</li>
-                <li>🟢 Sepakati harga &amp; DP 50% di awal</li>
-                <li>🟢 Pelunasan setelah file dikirim</li>
+                <li>🟢 <span class="lang-en">Contact me via WhatsApp, Instagram, or TikTok</span><span class="lang-id">Hubungi saya via WhatsApp, IG, atau TikTok</span></li>
+                <li>🟢 <span class="lang-en">Explain your project requirements and reference songs</span><span class="lang-id">Ceritakan kebutuhan proyek &amp; lagu referensi</span></li>
+                <li>🟢 <span class="lang-en">Agree on quote &amp; pay a 50% initial down payment (DP)</span><span class="lang-id">Sepakati harga &amp; transfer DP 50% di awal</span></li>
+                <li>🟢 <span class="lang-en">Full payment upon delivery of the final master files</span><span class="lang-id">Pelunasan sisa 50% setelah file final disetujui</span></li>
             </ul>
             <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
                 <a href="https://wa.me/6281353412340"
@@ -111,103 +127,113 @@
 
     </div>
 
-    <!-- ======================================================
-         TERMS OF SERVICE
-         ====================================================== -->
+    <!-- TERMS OF SERVICE -->
     <div class="mt-4">
-        <p class="section-label">Please Read Before Ordering</p>
-        <h2 class="section-title" style="font-size: 1.8rem;">Terms &amp; Conditions</h2>
+        <p class="section-label">
+            <span class="lang-en">Please Read Before Ordering</span>
+            <span class="lang-id">Harap Dibaca Sebelum Memesan</span>
+        </p>
+        <h2 class="section-title" style="font-size: 1.8rem;">
+            <span class="lang-en">Terms &amp; Conditions</span>
+            <span class="lang-id">Syarat &amp; Ketentuan (ToS)</span>
+        </h2>
         <div class="divider"></div>
         <div class="card">
-            <ul class="tos-list">
-                <li>
-                    A <strong>50% non-refundable deposit (DP)</strong> is required before work begins.
-                    <em style="color: var(--muted);">&nbsp;/ DP 50% dibayar di awal dan tidak dapat dikembalikan.</em>
-                </li>
-                <li>
-                    Estimated delivery time will be confirmed after discussing your brief.
-                    <em style="color: var(--muted);">&nbsp;/ Estimasi waktu pengerjaan dikonfirmasi setelah diskusi.</em>
-                </li>
-                <li>
-                    <strong>Up to 2 rounds</strong> of minor revisions are included.
-                    Additional revisions may incur extra charges.
-                    <em style="color: var(--muted);">&nbsp;/ Revisi ringan maksimal 2 kali sudah termasuk. Revisi tambahan dikenakan biaya tambahan.</em>
-                </li>
-                <li>
-                    <strong>Commercial use rights</strong> are available — please discuss this before ordering so we can adjust terms and pricing.
-                    <em style="color: var(--muted);">&nbsp;/ Hak komersial tersedia, sebutkan sebelum memesan agar harga bisa disesuaikan.</em>
-                </li>
-                <li>
-                    I retain the right to <strong>showcase completed work</strong> in my portfolio unless we agree otherwise.
-                    <em style="color: var(--muted);">&nbsp;/ Saya berhak menampilkan karya di portofolio kecuali ada kesepakatan lain.</em>
-                </li>
-                <li>
-                    All works are <strong>100% original</strong> compositions — no plagiarism, no AI-generated melody theft.
-                    <em style="color: var(--muted);">&nbsp;/ Semua karya adalah komposisi orisinal.</em>
-                </li>
-                <li>
-                    I reserve the right to <strong>decline orders</strong> that conflict with my values or capacity.
-                    <em style="color: var(--muted);">&nbsp;/ Saya berhak menolak pesanan yang tidak sesuai nilai atau kapasitas saya.</em>
-                </li>
+            <!-- English ToS -->
+            <ul class="tos-list lang-en">
+                <li>A <strong>50% non-refundable deposit (DP)</strong> is required before work begins (for direct orders).</li>
+                <li>Estimated delivery time will be confirmed after discussing your project brief.</li>
+                <li><strong>Up to 2 rounds</strong> of minor revisions are included. Additional major revisions may incur extra fees.</li>
+                <li><strong>Commercial use rights</strong> are available — please mention this upfront so we can adjust terms and pricing.</li>
+                <li>I retain the right to <strong>showcase completed work</strong> in my portfolio unless a non-disclosure agreement is agreed upon.</li>
+                <li>All compositions are <strong>100% original</strong> — no plagiarism, copyright infringement, or stolen melodies.</li>
+                <li>I reserve the right to <strong>decline projects</strong> that conflict with my values or current capacity.</li>
+            </ul>
+            <!-- Indonesian ToS -->
+            <ul class="tos-list lang-id">
+                <li>Uang muka sebesar <strong>50% (DP non-refundable)</strong> dibayarkan di awal sebelum pengerjaan dimulai.</li>
+                <li>Estimasi waktu pengerjaan akan disepakati bersama setelah pembahasan detail brief proyek.</li>
+                <li>Sudah termasuk <strong>maksimal 2 kali revisi minor</strong>. Revisi besar atau tambahan akan dikenakan biaya ekstra.</li>
+                <li><strong>Hak komersial</strong> tersedia — silakan sampaikan di awal agar ketentuan dan harga dapat disesuaikan.</li>
+                <li>Saya berhak menampilkan karya yang telah selesai di portofolio, kecuali jika ada perjanjian kerahasiaan khusus.</li>
+                <li>Semua karya adalah <strong>100% orisinal</strong> — bebas plagiarisme dan pelanggaran hak cipta.</li>
+                <li>Saya berhak menolak proyek yang tidak sesuai dengan kapasitas atau nilai-nilai berkarya saya.</li>
             </ul>
         </div>
     </div>
 
-    <!-- ======================================================
-         FAQ
-         ====================================================== -->
+    <!-- FAQ -->
     <div class="mt-4">
         <p class="section-label">FAQ</p>
-        <h2 class="section-title" style="font-size: 1.8rem;">Frequently Asked Questions</h2>
+        <h2 class="section-title" style="font-size: 1.8rem;">
+            <span class="lang-en">Frequently Asked Questions</span>
+            <span class="lang-id">Pertanyaan Umum</span>
+        </h2>
         <div class="divider"></div>
         <div class="faq-list">
 
             <div class="card faq-item">
-                <h4>How long does an order take?</h4>
-                <p>
-                    It depends on the complexity of your project. Simple transcriptions may take 1–3 days,
-                    while original compositions typically take 1–3 weeks.
-                    I'll give you a clear estimate after we discuss your brief.<br>
-                    <em>Tergantung kompleksitas proyek. Transkripsi sederhana 1–3 hari, komposisi orisinal 1–3 minggu. Estimasi pasti diberikan setelah diskusi.</em>
+                <h4>
+                    <span class="lang-en">How long does an order take?</span>
+                    <span class="lang-id">Berapa lama proses pengerjaan sebuah pesanan?</span>
+                </h4>
+                <p class="lang-en">
+                    It depends on project scope. Simple transcriptions take 1–3 days, while full original compositions typically take 1–3 weeks. A precise timeline will be confirmed once we discuss your brief.
+                </p>
+                <p class="lang-id">
+                    Tergantung kompleksitas proyek. Transkripsi sederhana membutuhkan 1–3 hari, sedangkan produksi komposisi orisinal penuh biasanya membutuhkan 1–3 minggu. Estimasi pasti akan diberikan saat diskusi awal.
                 </p>
             </div>
 
             <div class="card faq-item">
-                <h4>Can I use the music commercially?</h4>
-                <p>
-                    Yes, commercial licensing is available. Please mention this before ordering
-                    so we can adjust the terms and pricing accordingly.<br>
-                    <em>Ya, lisensi komersial tersedia. Harap sebutkan ini sebelum memesan.</em>
+                <h4>
+                    <span class="lang-en">Can I use the music commercially?</span>
+                    <span class="lang-id">Bisakah musik ini digunakan untuk keperluan komersial?</span>
+                </h4>
+                <p class="lang-en">
+                    Yes, commercial licensing is available. Please let me know prior to placing the order so we can adjust the license terms and pricing accordingly.
+                </p>
+                <p class="lang-id">
+                    Ya, lisensi komersial tersedia. Harap informasikan sebelum pemesanan agar syarat dan harga lisensi dapat disesuaikan dengan kebutuhan Anda.
                 </p>
             </div>
 
             <div class="card faq-item">
-                <h4>What file formats do you deliver?</h4>
-                <p>
-                    It depends on the service:<br>
-                    Audio → <strong>WAV</strong> or <strong>MP3</strong> &nbsp;·&nbsp;
-                    MIDI → <strong>.mid</strong> &nbsp;·&nbsp;
-                    Sheet music / tab → <strong>PDF</strong><br>
-                    Please specify your preferred format when ordering.<br>
-                    <em>Audio: WAV/MP3 · MIDI: .mid · Partitur/Tab: PDF. Sebutkan format yang diinginkan saat memesan.</em>
+                <h4>
+                    <span class="lang-en">What file formats do you deliver?</span>
+                    <span class="lang-id">Format file apa saja yang akan dikirimkan?</span>
+                </h4>
+                <p class="lang-en">
+                    Standard deliveries: Audio in <strong>WAV (24-bit)</strong> and <strong>MP3 (320kbps)</strong>, MIDI files in <strong>.mid</strong>, and Sheet Music / Tabs in <strong>PDF</strong>. Additional formats can be requested.
+                </p>
+                <p class="lang-id">
+                    Format standar: Audio dalam <strong>WAV (24-bit)</strong> dan <strong>MP3 (320kbps)</strong>, MIDI dalam file <strong>.mid</strong>, serta Partitur / Tab dalam format <strong>PDF</strong>.
                 </p>
             </div>
 
             <div class="card faq-item">
-                <h4>Do you accept rush orders?</h4>
-                <p>
-                    Rush orders are possible depending on my current workload and may incur an additional fee.
-                    Please contact me first to check availability.<br>
-                    <em>Pesanan kilat bisa dipertimbangkan tergantung workload saya dan mungkin ada biaya tambahan.</em>
+                <h4>
+                    <span class="lang-en">Do you accept rush orders?</span>
+                    <span class="lang-id">Apakah menerima pesanan kilat (rush order)?</span>
+                </h4>
+                <p class="lang-en">
+                    Rush orders are possible depending on my current workload, which may incur an additional rush fee. Please get in touch first to check availability.
+                </p>
+                <p class="lang-id">
+                    Pesanan kilat dimungkinkan tergantung jadwal antrean saya dan dapat dikenakan biaya tambahan. Silakan hubungi saya terlebih dahulu untuk memastikan ketersediaan.
                 </p>
             </div>
 
             <div class="card faq-item">
-                <h4>I'm a beginner — can I still commission you?</h4>
-                <p>
-                    Absolutely! You don't need to be a music expert. Just describe what you're imagining
-                    — a mood, a reference song, a story — and I'll take it from there.<br>
-                    <em>Tentu! Kamu tidak perlu jadi ahli musik. Cukup ceritakan mood, referensi, atau cerita yang kamu bayangkan.</em>
+                <h4>
+                    <span class="lang-en">I am a beginner — can I still commission you?</span>
+                    <span class="lang-id">Saya pemula di dunia musik — apakah tetap bisa memesan?</span>
+                </h4>
+                <p class="lang-en">
+                    Absolutely! You don't need any musical background. Just share the mood, references, or emotion you want to capture, and I will translate it into music.
+                </p>
+                <p class="lang-id">
+                    Tentu saja! Anda tidak harus mengerti teori musik. Cukup ceritakan suasana (mood), lagu referensi, atau cerita yang Anda bayangkan, dan saya akan mewujudkannya menjadi karya musik.
                 </p>
             </div>
 

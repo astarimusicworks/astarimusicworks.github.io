@@ -7,6 +7,7 @@
     <meta name="description" content="About Astari — J-Pop & J-Rock music producer, composer, and multi-instrumentalist with a background in Acoustical Physics.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
+    <script src="lang.js"></script>
 </head>
 <body>
 
@@ -15,22 +16,34 @@
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
         <span class="nav-logo-text">ASTARI</span>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-        <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="commission.html">Commission</a></li>
-        <li><a href="about.html" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-id">Beranda</span></a></li>
+        <li><a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+        <li><a href="portfolio.html"><span class="lang-en">Portfolio</span><span class="lang-id">Portofolio</span></a></li>
+        <li><a href="commission.html"><span class="lang-en">Commission</span><span class="lang-id">Komisi</span></a></li>
+        <li><a href="about.html" class="active"><span class="lang-en">About</span><span class="lang-id">Tentang</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
     </ul>
+    <div class="nav-actions">
+        <div class="lang-switch" title="Switch Language / Ganti Bahasa">
+            <button class="lang-btn btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn btn-id" onclick="setLanguage('id')">ID</button>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <div class="page-hero">
-    <p class="section-label">The Artist</p>
-    <h1 class="section-title">About Astari</h1>
+    <p class="section-label">
+        <span class="lang-en">The Artist</span>
+        <span class="lang-id">Profil Seniman</span>
+    </p>
+    <h1 class="section-title">
+        <span class="lang-en">About Astari</span>
+        <span class="lang-id">Tentang Astari</span>
+    </h1>
     <div class="divider"></div>
 </div>
 
@@ -41,7 +54,10 @@
         <div class="about-logo-area">
             <img src="astari_logo_blueneon_transparent.png" alt="Astari">
 
-            <p class="about-section-label">Instruments</p>
+            <p class="about-section-label">
+                <span class="lang-en">Instruments</span>
+                <span class="lang-id">Instrumen</span>
+            </p>
             <div class="skills-list" style="justify-content: center;">
                 <span class="skill-tag">Drum</span>
                 <span class="skill-tag">Guitar</span>
@@ -50,7 +66,10 @@
                 <span class="skill-tag">Violin</span>
             </div>
 
-            <p class="about-section-label">Software</p>
+            <p class="about-section-label">
+                <span class="lang-en">Software</span>
+                <span class="lang-id">Software &amp; DAW</span>
+            </p>
             <div class="skills-list" style="justify-content: center;">
                 <span class="skill-tag">Cubase</span>
                 <span class="skill-tag">FL Studio</span>
@@ -58,7 +77,10 @@
                 <span class="skill-tag">Synthesizer V</span>
             </div>
 
-            <p class="about-section-label">Focus Genre</p>
+            <p class="about-section-label">
+                <span class="lang-en">Focus Genre</span>
+                <span class="lang-id">Fokus Genre</span>
+            </p>
             <div class="skills-list" style="justify-content: center;">
                 <span class="skill-tag">J-Pop</span>
                 <span class="skill-tag">J-Rock</span>
@@ -69,47 +91,90 @@
 
         <!-- RIGHT: Bio -->
         <div class="about-content">
-            <h2>Hello, I'm Astari.</h2>
+            <h2>
+                <span class="lang-en">Hello, I'm Astari.</span>
+                <span class="lang-id">Halo, Saya Astari.</span>
+            </h2>
 
-            <p>
-                I'm a <strong>music producer and composer</strong> specializing in J-Pop and J-Rock.
-                My musical journey is rooted in a background in <strong>Acoustical Physics</strong> —
-                a field that taught me to hear music not just as art, but as science.
-                Understanding how sound behaves in space has made me a more intentional and precise producer.
-            </p>
+            <!-- English Bio -->
+            <div class="lang-en">
+                <p>
+                    I'm a <strong>music producer and composer</strong> specializing in J-Pop and J-Rock.
+                    My musical journey is rooted in a background in <strong>Acoustical Physics</strong> —
+                    a field that taught me to hear music not just as art, but as science.
+                    Understanding how sound behaves in space has made me a more intentional and precise producer.
+                </p>
 
-            <p>
-                I'm a multi-instrumentalist — I play <strong>drums, guitar, bass, piano, and violin</strong>.
-                This hands-on relationship with multiple instruments shapes everything I produce.
-                I write parts that feel natural and human, even when they're built inside a DAW.
-            </p>
+                <p>
+                    I'm a multi-instrumentalist — I play <strong>drums, guitar, bass, piano, and violin</strong>.
+                    This hands-on relationship with multiple instruments shapes everything I produce.
+                    I write parts that feel natural and human, even when they're built inside a DAW.
+                </p>
 
-            <p>
-                My released singles — <strong>Senjata Terkuat</strong> and <strong>Narasi Harapan</strong> —
-                are available on major streaming platforms.
-                They reflect my love for melodic storytelling and the emotional depth found in Japanese music.
-            </p>
+                <p>
+                    My released singles — <strong>Senjata Terkuat</strong> and <strong>Narasi Harapan</strong> —
+                    are available on major streaming platforms.
+                    They reflect my love for melodic storytelling and the emotional depth found in Japanese music.
+                </p>
 
-            <p>
-                I work under the name <em>Astari</em> — a space where sound meets intention,
-                and every note serves a purpose.
-                Whether you need a transcription, a full original composition, or something in between,
-                I'm here to bring your musical vision to life.
-            </p>
+                <p>
+                    I work under the name <em>Astari</em> — a space where sound meets intention,
+                    and every note serves a purpose.
+                    Whether you need a transcription, a full original composition, or something in between,
+                    I'm here to bring your musical vision to life.
+                </p>
+            </div>
+
+            <!-- Indonesian Bio -->
+            <div class="lang-id">
+                <p>
+                    Saya adalah seorang <strong>produser musik dan komposer</strong> yang berfokus pada genre J-Pop dan J-Rock.
+                    Perjalanan musikal saya berakar dari latar belakang di bidang <strong>Fisika Akustik</strong> —
+                    disiplin ilmu yang mengajarkan saya mendengar musik bukan hanya sebagai karya seni, tetapi juga sebagai sains.
+                    Memahami perilaku gelombang suara di ruang akustik membuat saya menjadi produser yang presisi dan penuh intensi.
+                </p>
+
+                <p>
+                    Saya adalah seorang multi-instrumentalis — aktif memainkan <strong>drum, gitar, bass, piano, dan biola</strong>.
+                    Pengalaman langsung dengan berbagai instrumen ini membentuk cara saya memproduksi musik.
+                    Setiap aransemen dirancang agar terasa organik, hidup, dan bernyawa, meskipun diproses secara digital di dalam DAW.
+                </p>
+
+                <p>
+                    Karya single orisinal saya — <strong>Senjata Terkuat</strong> dan <strong>Narasi Harapan</strong> —
+                    telah dirilis di platform streaming utama.
+                    Karya-karya ini mencerminkan kecintaan saya terhadap alur melodi yang emosional dan bercerita khas musik Jepang.
+                </p>
+
+                <p>
+                    Saya berkarya dengan identitas <em>Astari</em> — sebuah ruang di mana suara bertemu dengan tujuan artistik,
+                    dan setiap nada memiliki makna.
+                    Mulai dari transkripsi partitur, aransemen, hingga produksi lagu orisinal penuh, saya siap mewujudkan visi musik Anda.
+                </p>
+            </div>
 
             <!-- Stats -->
             <div class="about-stats">
                 <div class="stat">
                     <span class="stat-number">2</span>
-                    <span class="stat-label">Released Singles</span>
+                    <span class="stat-label">
+                        <span class="lang-en">Released Singles</span>
+                        <span class="lang-id">Single Dirilis</span>
+                    </span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">5</span>
-                    <span class="stat-label">Instruments</span>
+                    <span class="stat-label">
+                        <span class="lang-en">Instruments</span>
+                        <span class="lang-id">Instrumen</span>
+                    </span>
                 </div>
                 <div class="stat">
                     <span class="stat-number">4</span>
-                    <span class="stat-label">DAWs &amp; Tools</span>
+                    <span class="stat-label">
+                        <span class="lang-en">DAWs &amp; Tools</span>
+                        <span class="lang-id">DAW &amp; Tools</span>
+                    </span>
                 </div>
             </div>
         </div>

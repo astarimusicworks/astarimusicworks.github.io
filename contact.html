@@ -7,6 +7,7 @@
     <meta name="description" content="Contact Astari to commission music production, transcription, vocal covers, and more.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
+    <script src="lang.js"></script>
 </head>
 <body>
 
@@ -15,47 +16,120 @@
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
         <span class="nav-logo-text">ASTARI</span>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-        <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="commission.html">Commission</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-id">Beranda</span></a></li>
+        <li><a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+        <li><a href="portfolio.html"><span class="lang-en">Portfolio</span><span class="lang-id">Portofolio</span></a></li>
+        <li><a href="commission.html"><span class="lang-en">Commission</span><span class="lang-id">Komisi</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-id">Tentang</span></a></li>
+        <li><a href="contact.html" class="active"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
     </ul>
+    <div class="nav-actions">
+        <div class="lang-switch" title="Switch Language / Ganti Bahasa">
+            <button class="lang-btn btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn btn-id" onclick="setLanguage('id')">ID</button>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <div class="page-hero">
-    <p class="section-label">Get in Touch</p>
-    <h1 class="section-title">Contact</h1>
+    <p class="section-label">
+        <span class="lang-en">Get in Touch</span>
+        <span class="lang-id">Hubungi Saya</span>
+    </p>
+    <h1 class="section-title">
+        <span class="lang-en">Contact</span>
+        <span class="lang-id">Kontak</span>
+    </h1>
     <div class="divider"></div>
     <p style="color: var(--muted); font-size: 0.925rem; max-width: 500px; margin: 0 auto; line-height: 1.8;">
-        Ready to start a project? Let's talk.<br>
-        <em style="font-size: 0.85rem;">Siap mulai proyek? Hubungi saya.</em>
+        <span class="lang-en">Ready to start a project? Feel free to reach out via any platform below.</span>
+        <span class="lang-id">Siap memulai proyek musik Anda? Hubungi saya melalui salah satu platform di bawah.</span>
     </p>
 </div>
 
 <section>
 
-    <!-- ======================================================
-         INTERNATIONAL
-         ====================================================== -->
-    <p class="section-label">International</p>
-    <h2 class="section-title" style="font-size: 1.8rem;">For International Clients</h2>
-    <div class="divider"></div>
+    <!-- INTERNATIONAL (Visible in EN mode) -->
+    <div class="lang-en">
+        <p class="section-label">International Orders</p>
+        <h2 class="section-title" style="font-size: 1.8rem;">Commission &amp; Inquiries</h2>
+        <div class="divider"></div>
+    </div>
+
+    <!-- INDONESIA (Visible in ID mode) -->
+    <div class="lang-id">
+        <p class="section-label">Pemesanan &amp; Diskusi</p>
+        <h2 class="section-title" style="font-size: 1.8rem;">Saluran Komunikasi</h2>
+        <div class="divider"></div>
+        <p style="color: var(--muted); font-size: 0.875rem; text-align: center; margin-bottom: 2rem; line-height: 1.8;">
+            Harga dalam Rupiah &nbsp;·&nbsp; Pembayaran via transfer bank &nbsp;·&nbsp; Respon cepat dalam 24 jam.
+        </p>
+    </div>
+
     <div class="contact-grid">
 
+        <!-- WhatsApp -->
+        <div class="contact-card">
+            <div class="contact-card-header">
+                <span class="contact-icon">💬</span>
+                <h3>WhatsApp</h3>
+            </div>
+            <p>
+                <span class="lang-en">Direct chat for quick consultations, project briefs, and custom quotes. Response within 24 hours.</span>
+                <span class="lang-id">Untuk diskusi cepat, konsultasi ide musik, dan detail pesanan. Respon dalam 1×24 jam.</span>
+            </p>
+            <a href="https://wa.me/6281353412340"
+               target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85rem;">
+               <span class="lang-en">Chat via WhatsApp</span>
+               <span class="lang-id">Chat via WhatsApp</span>
+            </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-card">
+            <div class="contact-card-header">
+                <span class="contact-icon">📸</span>
+                <h3>Instagram</h3>
+            </div>
+            <p>
+                <span class="lang-en">Send a direct message (DM) for inquiries, collaborations, and music updates.</span>
+                <span class="lang-id">Follow karya terbaru atau kirim pesan langsung (DM) untuk konsultasi dan kolaborasi.</span>
+            </p>
+            <a href="https://www.instagram.com/astarimusicworks/"
+               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;">
+               DM on Instagram
+            </a>
+        </div>
+
+        <!-- TikTok -->
+        <div class="contact-card">
+            <div class="contact-card-header">
+                <span class="contact-icon">🎵</span>
+                <h3>TikTok</h3>
+            </div>
+            <p>
+                <span class="lang-en">Check out short previews, behind-the-scenes clips, or contact me via DM.</span>
+                <span class="lang-id">Tonton cuplikan teaser lagu, proses kreatif aransemen, dan kontak lewat DM.</span>
+            </p>
+            <a href="https://www.tiktok.com/@astari3046"
+               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;">
+               DM on TikTok
+            </a>
+        </div>
+
+        <!-- Fiverr -->
         <div class="contact-card">
             <div class="contact-card-header">
                 <span class="contact-icon">🟢</span>
                 <h3>Fiverr</h3>
             </div>
             <p>
-                Order directly through Fiverr for a safe, structured transaction.
-                Pricing in USD. Secure escrow payments.
+                <span class="lang-en">Order directly with secure escrow payments in USD. Ideal for international commissions.</span>
+                <span class="lang-id">Pesan langsung melalui platform Fiverr dengan pembayaran USD dan sistem proteksi escrow.</span>
             </p>
             <a href="https://www.fiverr.com/s/P44VlWw"
                target="_blank" rel="noopener" class="btn btn-fiverr" style="font-size:0.85rem;">
@@ -65,74 +139,11 @@
 
     </div>
 
-    <!-- ======================================================
-         LOCAL / INDONESIA
-         ====================================================== -->
-    <hr class="contact-section-divider">
-
-    <p class="section-label">Indonesia</p>
-    <h2 class="section-title" style="font-size: 1.8rem;">Untuk Klien Indonesia</h2>
-    <div class="divider"></div>
-    <p style="color: var(--muted); font-size: 0.875rem; text-align: center; margin-bottom: 2rem; line-height: 1.8;">
-        Harga dalam Rupiah &nbsp;·&nbsp; Bayar via transfer bank &nbsp;·&nbsp; Hubungi langsung lewat:
-    </p>
-
-    <div class="contact-grid">
-
-        <div class="contact-card">
-            <div class="contact-card-header">
-                <span class="contact-icon">💬</span>
-                <h3>WhatsApp</h3>
-            </div>
-            <p>
-                Untuk diskusi cepat dan detail pesanan. Respon dalam 1×24 jam.<br>
-                <em style="font-size: 0.8rem;">Quick discussion and order details. Response within 24 hours.</em>
-            </p>
-            <a href="https://wa.me/6281353412340"
-               target="_blank" rel="noopener" class="btn btn-primary" style="font-size:0.85rem;">
-               Chat via WhatsApp
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <div class="contact-card-header">
-                <span class="contact-icon">📸</span>
-                <h3>Instagram</h3>
-            </div>
-            <p>
-                DM saya di Instagram untuk bertanya atau memulai pesanan.<br>
-                <em style="font-size: 0.8rem;">Send me a DM on Instagram to ask questions or start an order.</em>
-            </p>
-            <a href="https://www.instagram.com/astarimusicworks/"
-               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;">
-               DM on Instagram
-            </a>
-        </div>
-
-        <div class="contact-card">
-            <div class="contact-card-header">
-                <span class="contact-icon">🎵</span>
-                <h3>TikTok</h3>
-            </div>
-            <p>
-                Ikuti dan DM saya di TikTok.<br>
-                <em style="font-size: 0.8rem;">Follow and DM me on TikTok.</em>
-            </p>
-            <a href="https://www.tiktok.com/@astari3046"
-               target="_blank" rel="noopener" class="btn btn-outline" style="font-size:0.85rem;">
-               DM on TikTok
-            </a>
-        </div>
-
-    </div>
-
     <!-- Note -->
     <div class="info-box mt-4">
-        ⏱️ &nbsp; Average response time: within 24 hours &nbsp;·&nbsp;
-        <em>Rata-rata respon dalam 24 jam.</em><br>
-        Please read the
-        <a href="commission.html" style="color: var(--light);">Commission Terms</a>
-        before ordering.
+        ⏱️ &nbsp; 
+        <span class="lang-en">Average response time: within 24 hours. Please review the <a href="commission.html" style="color: var(--light);">Commission Terms</a> before ordering.</span>
+        <span class="lang-id">Rata-rata waktu respon: dalam 24 jam. Silakan baca <a href="commission.html" style="color: var(--light);">Syarat Komisi (ToS)</a> sebelum memesan.</span>
     </div>
 
 </section>

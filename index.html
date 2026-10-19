@@ -7,6 +7,7 @@
     <meta name="description" content="Astari — J-Pop & J-Rock Music Producer, Composer, Multi-Instrumentalist. Open for commissions.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
+    <script src="lang.js"></script>
 </head>
 <body>
 
@@ -18,17 +19,23 @@
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
         <span class="nav-logo-text">ASTARI</span>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-        <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="commission.html">Commission</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html" class="active"><span class="lang-en">Home</span><span class="lang-id">Beranda</span></a></li>
+        <li><a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+        <li><a href="portfolio.html"><span class="lang-en">Portfolio</span><span class="lang-id">Portofolio</span></a></li>
+        <li><a href="commission.html"><span class="lang-en">Commission</span><span class="lang-id">Komisi</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-id">Tentang</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
     </ul>
+    <div class="nav-actions">
+        <div class="lang-switch" title="Switch Language / Ganti Bahasa">
+            <button class="lang-btn btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn btn-id" onclick="setLanguage('id')">ID</button>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <!-- ======================================================
@@ -38,18 +45,29 @@
     <div class="hero-logo">
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
     </div>
-    <p class="hero-eyebrow">Music Producer &amp; Composer</p>
+    <p class="hero-eyebrow">
+        <span class="lang-en">Music Producer &amp; Composer</span>
+        <span class="lang-id">Produser Musik &amp; Komposer</span>
+    </p>
     <h1 class="hero-title">ASTARI</h1>
     <p class="hero-subtitle">
-        J-Pop <span>·</span> J-Rock <span>·</span> Original Composition
+        <span class="lang-en">J-Pop <span>·</span> J-Rock <span>·</span> Original Composition</span>
+        <span class="lang-id">J-Pop <span>·</span> J-Rock <span>·</span> Komposisi Orisinal</span>
     </p>
     <div class="hero-buttons">
-        <a href="commission.html" class="btn btn-primary">✦ Open Commission</a>
-        <a href="portfolio.html" class="btn btn-outline">Listen to My Work</a>
+        <a href="commission.html" class="btn btn-primary">
+            <span class="lang-en">✦ Open Commission</span>
+            <span class="lang-id">✦ Buka Komisi</span>
+        </a>
+        <a href="portfolio.html" class="btn btn-outline">
+            <span class="lang-en">Listen to My Work</span>
+            <span class="lang-id">Dengarkan Karya</span>
+        </a>
     </div>
     <div class="commission-status">
         <span class="status-dot"></span>
-        Commission is currently&nbsp;<strong style="color: var(--green);">Open</strong>
+        <span class="lang-en">Commission is currently&nbsp;<strong style="color: var(--green);">Open</strong></span>
+        <span class="lang-id">Komisi saat ini&nbsp;<strong style="color: var(--green);">Buka</strong></span>
     </div>
 </main>
 
@@ -57,20 +75,29 @@
      SERVICES PREVIEW
      ====================================================== -->
 <section>
-    <p class="section-label">What I Offer</p>
-    <h2 class="section-title">Services</h2>
+    <p class="section-label">
+        <span class="lang-en">What I Offer</span>
+        <span class="lang-id">Yang Saya Tawarkan</span>
+    </p>
+    <h2 class="section-title">
+        <span class="lang-en">Services</span>
+        <span class="lang-id">Layanan</span>
+    </h2>
     <div class="divider"></div>
     <div class="services-mini-grid">
-        <div class="service-mini-card">🎵&nbsp; MIDI Transcription</div>
+        <div class="service-mini-card">🎵&nbsp; <span class="lang-en">MIDI Transcription</span><span class="lang-id">Transkripsi MIDI</span></div>
         <div class="service-mini-card">🎤&nbsp; Synthesizer V Vocal Cover</div>
-        <div class="service-mini-card">🎼&nbsp; Original Composition</div>
-        <div class="service-mini-card">🎸&nbsp; Arrangement &amp; Backing Track</div>
-        <div class="service-mini-card">🥁&nbsp; Session Musician (Remote)</div>
+        <div class="service-mini-card">🎼&nbsp; <span class="lang-en">Original Composition</span><span class="lang-id">Komposisi Orisinal</span></div>
+        <div class="service-mini-card">🎸&nbsp; <span class="lang-en">Arrangement &amp; Backing Track</span><span class="lang-id">Aransemen &amp; Backing Track</span></div>
+        <div class="service-mini-card">🥁&nbsp; <span class="lang-en">Session Musician (Remote)</span><span class="lang-id">Musisi Sesi (Remote)</span></div>
         <div class="service-mini-card">🎚️&nbsp; Mixing</div>
         <div class="service-mini-card">🎮&nbsp; Sound Design</div>
     </div>
     <div class="text-center mt-2">
-        <a href="services.html" class="btn btn-outline">View All Services →</a>
+        <a href="services.html" class="btn btn-outline">
+            <span class="lang-en">View All Services →</span>
+            <span class="lang-id">Lihat Semua Layanan →</span>
+        </a>
     </div>
 </section>
 
@@ -79,46 +106,63 @@
      ====================================================== -->
 <div style="background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <section>
-        <p class="section-label">Latest Releases</p>
-        <h2 class="section-title">Featured Works</h2>
+        <p class="section-label">
+            <span class="lang-en">Latest Releases</span>
+            <span class="lang-id">Rilis Terbaru</span>
+        </p>
+        <h2 class="section-title">
+            <span class="lang-en">Featured Works</span>
+            <span class="lang-id">Karya Pilihan</span>
+        </h2>
         <div class="divider"></div>
         <div class="portfolio-grid">
 
             <!-- Single 1 -->
             <div class="portfolio-card">
                 <div class="portfolio-artwork">
-                    <!-- REPLACE with: <img src="images/senjata-terkuat.jpg" alt="Senjata Terkuat"> -->
                     ♪
                 </div>
                 <div class="portfolio-info">
                     <h3>Senjata Terkuat</h3>
-                    <p class="meta">Original Single &nbsp;·&nbsp; J-Pop</p>
+                    <p class="meta">
+                        <span class="lang-en">Original Single &nbsp;·&nbsp; J-Pop</span>
+                        <span class="lang-id">Single Orisinal &nbsp;·&nbsp; J-Pop</span>
+                    </p>
                 </div>
                 <div class="portfolio-embed">
-                    <!-- PASTE your Spotify / SoundCloud embed code here -->
-                    <div class="embed-placeholder">[ Streaming embed ]</div>
+                    <div class="embed-placeholder">
+                        <span class="lang-en">[ Streaming embed ]</span>
+                        <span class="lang-id">[ Pemutar streaming ]</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Single 2 -->
             <div class="portfolio-card">
                 <div class="portfolio-artwork">
-                    <!-- REPLACE with: <img src="images/narasi-harapan.jpg" alt="Narasi Harapan"> -->
                     ♪
                 </div>
                 <div class="portfolio-info">
                     <h3>Narasi Harapan</h3>
-                    <p class="meta">Original Single &nbsp;·&nbsp; J-Pop</p>
+                    <p class="meta">
+                        <span class="lang-en">Original Single &nbsp;·&nbsp; J-Pop</span>
+                        <span class="lang-id">Single Orisinal &nbsp;·&nbsp; J-Pop</span>
+                    </p>
                 </div>
                 <div class="portfolio-embed">
-                    <!-- PASTE your Spotify / SoundCloud embed code here -->
-                    <div class="embed-placeholder">[ Streaming embed ]</div>
+                    <div class="embed-placeholder">
+                        <span class="lang-en">[ Streaming embed ]</span>
+                        <span class="lang-id">[ Pemutar streaming ]</span>
+                    </div>
                 </div>
             </div>
 
         </div>
         <div class="text-center mt-3">
-            <a href="portfolio.html" class="btn btn-outline">View Full Portfolio →</a>
+            <a href="portfolio.html" class="btn btn-outline">
+                <span class="lang-en">View Full Portfolio →</span>
+                <span class="lang-id">Lihat Portofolio Lengkap →</span>
+            </a>
         </div>
     </section>
 </div>

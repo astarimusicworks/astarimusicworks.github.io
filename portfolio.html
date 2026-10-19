@@ -7,6 +7,7 @@
     <meta name="description" content="Portfolio of Astari — original singles, compositions, and productions in J-Pop and J-Rock.">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="astari_logo_blueneon_transparent.png" type="image/png">
+    <script src="lang.js"></script>
 </head>
 <body>
 
@@ -15,25 +16,38 @@
         <img src="astari_logo_blueneon_transparent.png" alt="Astari">
         <span class="nav-logo-text">ASTARI</span>
     </a>
-    <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
-        <span></span><span></span><span></span>
-    </button>
     <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
-        <li><a href="commission.html">Commission</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><span class="lang-en">Home</span><span class="lang-id">Beranda</span></a></li>
+        <li><a href="services.html"><span class="lang-en">Services</span><span class="lang-id">Layanan</span></a></li>
+        <li><a href="portfolio.html" class="active"><span class="lang-en">Portfolio</span><span class="lang-id">Portofolio</span></a></li>
+        <li><a href="commission.html"><span class="lang-en">Commission</span><span class="lang-id">Komisi</span></a></li>
+        <li><a href="about.html"><span class="lang-en">About</span><span class="lang-id">Tentang</span></a></li>
+        <li><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-id">Kontak</span></a></li>
     </ul>
+    <div class="nav-actions">
+        <div class="lang-switch" title="Switch Language / Ganti Bahasa">
+            <button class="lang-btn btn-en" onclick="setLanguage('en')">EN</button>
+            <button class="lang-btn btn-id" onclick="setLanguage('id')">ID</button>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Open Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
 <div class="page-hero">
-    <p class="section-label">My Work</p>
-    <h1 class="section-title">Portfolio</h1>
+    <p class="section-label">
+        <span class="lang-en">My Work</span>
+        <span class="lang-id">Karya Saya</span>
+    </p>
+    <h1 class="section-title">
+        <span class="lang-en">Portfolio</span>
+        <span class="lang-id">Portofolio</span>
+    </h1>
     <div class="divider"></div>
     <p style="color: var(--muted); font-size: 0.925rem; max-width: 500px; margin: 0 auto;">
-        A collection of original compositions, arrangements, and productions.
+        <span class="lang-en">A collection of original compositions, arrangements, and productions.</span>
+        <span class="lang-id">Koleksi karya komposisi orisinal, aransemen, dan produksi musik.</span>
     </p>
 </div>
 
@@ -41,8 +55,14 @@
      ORIGINAL SINGLES
      ====================================================== -->
 <section>
-    <p class="section-label">Released Works</p>
-    <h2 class="section-title" style="font-size: 1.8rem;">Original Singles</h2>
+    <p class="section-label">
+        <span class="lang-en">Released Works</span>
+        <span class="lang-id">Karya yang Dirilis</span>
+    </p>
+    <h2 class="section-title" style="font-size: 1.8rem;">
+        <span class="lang-en">Original Singles</span>
+        <span class="lang-id">Single Orisinal</span>
+    </h2>
     <div class="divider"></div>
 
     <div class="portfolio-grid">
@@ -50,82 +70,63 @@
         <!-- Senjata Terkuat -->
         <div class="portfolio-card">
             <div class="portfolio-artwork">
-                <!-- REPLACE with your artwork:
-                     <img src="images/senjata-terkuat.jpg" alt="Senjata Terkuat Cover Art"> -->
                 ♪
             </div>
             <div class="portfolio-info">
                 <h3>Senjata Terkuat</h3>
-                <p class="meta">Original Single &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Available on streaming platforms</p>
+                <p class="meta">
+                    <span class="lang-en">Original Single &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Available on streaming platforms</span>
+                    <span class="lang-id">Single Orisinal &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Tersedia di platform streaming</span>
+                </p>
             </div>
             <div class="portfolio-embed">
-                <!--
-                === SPOTIFY EMBED ===
-                <iframe style="border-radius:12px"
-                    src="https://open.spotify.com/embed/track/[YOUR_TRACK_ID]?utm_source=generator"
-                    width="100%" height="80" frameborder="0"
-                    allowfullscreen=""
-                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
-                </iframe>
-
-                === SOUNDCLOUD EMBED ===
-                <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/[TRACK_ID]&color=%234A7BF7&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-                </iframe>
-                -->
-                <div class="embed-placeholder">[ Paste your Spotify or SoundCloud embed here ]</div>
+                <div class="embed-placeholder">
+                    <span class="lang-en">[ Paste your Spotify or SoundCloud embed here ]</span>
+                    <span class="lang-id">[ Tempel embed Spotify atau SoundCloud Anda di sini ]</span>
+                </div>
             </div>
         </div>
 
         <!-- Narasi Harapan -->
         <div class="portfolio-card">
             <div class="portfolio-artwork">
-                <!-- REPLACE with your artwork:
-                     <img src="images/narasi-harapan.jpg" alt="Narasi Harapan Cover Art"> -->
                 ♪
             </div>
             <div class="portfolio-info">
                 <h3>Narasi Harapan</h3>
-                <p class="meta">Original Single &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Available on streaming platforms</p>
+                <p class="meta">
+                    <span class="lang-en">Original Single &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Available on streaming platforms</span>
+                    <span class="lang-id">Single Orisinal &nbsp;·&nbsp; J-Pop &nbsp;·&nbsp; Tersedia di platform streaming</span>
+                </p>
             </div>
             <div class="portfolio-embed">
-                <!-- Paste embed code here (see Senjata Terkuat above for format) -->
-                <div class="embed-placeholder">[ Paste your Spotify or SoundCloud embed here ]</div>
+                <div class="embed-placeholder">
+                    <span class="lang-en">[ Paste your Spotify or SoundCloud embed here ]</span>
+                    <span class="lang-id">[ Tempel embed Spotify atau SoundCloud Anda di sini ]</span>
+                </div>
             </div>
         </div>
 
     </div>
 
     <!-- ======================================================
-         OTHER WORKS — add more projects here over time
+         OTHER WORKS
          ====================================================== -->
     <div class="mt-4">
-        <p class="section-label">More Projects</p>
-        <h2 class="section-title" style="font-size: 1.8rem;">Other Works</h2>
+        <p class="section-label">
+            <span class="lang-en">More Projects</span>
+            <span class="lang-id">Proyek Lainnya</span>
+        </p>
+        <h2 class="section-title" style="font-size: 1.8rem;">
+            <span class="lang-en">Other Works</span>
+            <span class="lang-id">Karya Lainnya</span>
+        </h2>
         <div class="divider"></div>
         <div class="portfolio-grid">
-            <!--
-            === HOW TO ADD A NEW WORK ===
-            Copy the block below, uncomment it, and fill in your info:
-
-            <div class="portfolio-card">
-                <div class="portfolio-artwork">
-                    <img src="images/[YOUR_ARTWORK].jpg" alt="[Title]">
-                </div>
-                <div class="portfolio-info">
-                    <h3>[Title]</h3>
-                    <p class="meta">[Type] · [Genre] · [Year]</p>
-                </div>
-                <div class="portfolio-embed">
-                    [ embed or link ]
-                </div>
-            </div>
-            -->
-
-            <!-- Placeholder until more works are added -->
             <div style="grid-column: 1 / -1;">
                 <div class="info-box">
-                    ✦ &nbsp; More works coming soon. Stay tuned!
+                    <span class="lang-en">✦ &nbsp; More works coming soon. Stay tuned!</span>
+                    <span class="lang-id">✦ &nbsp; Karya-karya baru akan segera hadir. Nantikan!</span>
                 </div>
             </div>
         </div>
