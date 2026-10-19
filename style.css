@@ -946,3 +946,84 @@ footer a:hover { color: var(--white); }
 body.lang-en .lang-id { display: none !important; }
 body.lang-id .lang-en { display: none !important; }
 
+/* ============================================================
+   SPOTIFY & AUDIO PLAYERS
+   ============================================================ */
+.spotify-embed-container {
+    width: 100%;
+    max-width: 760px;
+    margin: 2rem auto;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--border);
+}
+
+.audio-track-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    transition: transform 0.25s, border-color 0.25s;
+}
+
+.audio-track-card:hover {
+    border-color: var(--blue);
+    transform: translateY(-2px);
+}
+
+.audio-track-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.audio-track-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.audio-track-tag {
+    font-size: 0.72rem;
+    color: var(--accent);
+    background: rgba(74, 123, 247, 0.12);
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
+.custom-audio-player {
+    width: 100%;
+    outline: none;
+    height: 38px;
+    border-radius: 8px;
+}
+
+/* Drag and Drop Zone */
+.dropzone-box {
+    border: 2px dashed var(--border);
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.02);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    margin: 1.5rem 0;
+}
+
+.dropzone-box:hover, .dropzone-box.dragover {
+    border-color: var(--accent);
+    background: rgba(74, 123, 247, 0.06);
+}
+
+.dropzone-icon {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
